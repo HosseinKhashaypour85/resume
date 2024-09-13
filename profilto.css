@@ -1,0 +1,224 @@
+:root {
+  --fontirs: irs;
+  --fontbahman: bahman;
+  --fontlale: lale;
+  --fontaviny: aviny;
+  --color1: #04aa6d;
+  --color2: #6528e0;
+  --color3: rgb(7 112 112);
+  --color4: rgb(23, 240, 23);
+  --color5: #0c0025;
+  --color6: rgb(1, 1, 54);
+  --color7: #171615;
+  --color8: #1d1615;
+  --color9: #20211a;
+  --color10: #141514;
+  --color11: #0f0616;
+  --color12: #292827;
+  --glasswhite: rgba(255, 255, 255, 0.5);
+  --bg-light: #eee;
+  --bg-dark: #444;
+  --bg-dark-2: #151515;
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+@font-face {
+  font-family: irs;
+  src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+  font-family: lale;
+  src: url(Lalezar-Regular.ttf);
+}
+
+@font-face {
+  font-family: bahman;
+  src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+  font-family: aviny;
+  src: url(aviny.ttf);
+}
+body {
+  overflow-x: hidden;
+  /* transition: background-color 1s; */
+}
+.dark-theme {
+  background: linear-gradient(to right, #917173, #2a3b36, #432c52) !important;
+  transition: 1s ease;
+  /* background-color: orangered; */
+}
+.light-theme {
+  background: linear-gradient(to right, #4682b4, rgba(0, 0, 0, 0.5)) !important;
+  transition: 1s ease;
+}
+
+@media (min-width: 300px) {
+  #backToindex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #backToindex > button {
+    padding: 10px 20px;
+    font-family: var(--fontirs);
+    border-radius: 10px;
+    background-color: var(--color2);
+    color: white;
+  }
+  #backToindex > button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  #theme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #theme > img {
+    width: 10%;
+    transform: translateY(-130%);
+  }
+  #samples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--fontirs);
+  }
+  .samplebtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 50%;
+    font-family: var(--fontirs);
+    font-size: 15px;
+    text-align: center;
+  }
+  .samplebtn > span > p1 {
+    font-family: var(--fontirs);
+  }
+  .link {
+    width: 10%;
+    transform: translateY(10%);
+  }
+  h2 {
+    color: white;
+    text-align: center;
+    font-family: var(--fontirs);
+  }
+  .iframe {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+  }
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff24;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  #contact > button {
+    background-color: white;
+    font-family: var(--fontirs);
+    opacity: 1;
+    animation: contact 3s infinite linear;
+  }
+}
+
+@keyframes contact {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* res */
+
+@media (min-width: 700px) {
+  #theme {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #theme > img {
+    width: 3%;
+    transform: translateY(-120%);
+  }
+  #theme > img:hover {
+    background-color: gray;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+  #samples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: var(--fontirs);
+  }
+  .samplebtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 30%;
+    font-family: var(--fontirs);
+    font-size: 15px;
+    text-align: center;
+  }
+  .samplebtn > span > p1 {
+    font-family: var(--fontirs);
+  }
+  .samplebtn:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .samplebtn:active {
+    background-color: var(--color1);
+    color: white;
+  }
+  .link {
+    width: 10%;
+  }
+  h2 {
+    color: black;
+    text-align: center;
+    font-family: var(--fontirs);
+  }
+  .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}

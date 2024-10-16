@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="hhh.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link id="theme-stylesheet" rel="stylesheet" href="light-theme.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=7"> -->
     <title>HosseinKhashaypour</title>
@@ -17,36 +18,24 @@
             >&times;</a
           >
           <div class="overlay-content">
-            <a href="#">درباره من</a>
-            <a href="#">خدمات</a>
+            <a href="#aboutme" onclick="closeNav()">درباره من</a>
+            <a href="#give-services" onclick="closeNav()">خدمات</a>
             <a href="#">راه های ارتباطی</a>
           </div>
         </div>
-        <span
-          style="font-size: 30px; cursor: pointer"
-          onclick="openNav()"
-          class="menu"
-          >&#9776;
-        </span>
+<div class="topSection-options">
+  <span
+  style="font-size: 30px; cursor: pointer"
+  onclick="openNav()"
+  class="menu"
+  >&#9776;
+</span>
+<img src="dark-mode.png" alt="dark-mode" class="dark-icon" id="toggle-theme" />
+</div>
         <!-- <div id="theme">
                 <img src="light-mode.png" alt="light-mode" class="light-icon">
             </div> -->
-        <div id="menu-res">
-          <nav>
-            <ul>
-              <li><a href="index.html" class="about">درباره</a></li>
-              <li><a href="services.html">خدمات</a></li>
-              <li>
-                <a
-                  href="contact.html
-                            "
-                  >ارتباط با من</a
-                >
-              </li>
-              <!-- <li><a href="#"></a></li> -->
-            </ul>
-          </nav>
-        </div>
+      
       </section>
 
       <section id="bottom">
@@ -66,7 +55,7 @@
         <br />
         <br />
         <div id="resume">
-          <button class="resume" style="text-align: center">
+          <button class="resume button" style="text-align: center" id="resumeButton">
             مشاهده نمونه کار ها
           </button>
         </div>
@@ -107,7 +96,7 @@
             و پشتیبانی بعد از طراحی میشود</p1
           >
         </div>
-        <hr />
+        <br>
         <div id="services-container">
           <img
             src="assets/images/site.png"
@@ -120,11 +109,67 @@
             شامل مشاوره و پشتیبانی میشود و انجام تغییرات تا 2 بار امکان پذیر است
           </p1>
         </div>
+        <br>
+        <div id="services-container">
+          <img
+            src="assets/images/responsive.png"
+            alt="app develpment"
+            class="service-image"
+          />
+          <h1 class="services-title">طراحی و توسعه ریسپانسیو</h1>
+          <p1 class="services-deatail">
+            طراحی و توسعه سایت دلخواه و مورد نظر شما با کد نویسی انجام شده و
+            شامل مشاوره و پشتیبانی میشود و انجام تغییرات تا 2 بار امکان پذیر است
+          </p1>
+        </div>
         <br />
         <br />
         <div id="samples-container">
             <h1>نمونه کار های من :</h1>
         </div>
+        <div id="samples">
+        <img src="assets/images/prokalaimg.jpg" alt="prokala" class="sampleImagesSize">
+        <br>
+          <p1> اپلیکیشن پروکالا</p1>
+          <br>
+          <p1 class="desc">اپ پروکالا اپی مشابه به دیجی کالا هست که با فریم ورک فلاتر نوشته شده</p1>
+          <br>
+          <button class="downloadBtn"><a href="assets/prokalaapk/app-release.apk" download="app-release.apk"><p>دانلود اپلکیشن</p>
+          </a></button>
+        </div>
+        <br>
+        <div id="samples">
+          <img src="assets/images/prokalaimg.jpg" alt="prokala" class="sampleImagesSize">
+          <br>
+            <p1> اپلیکیشن تل ایکس</p1>
+            <br>
+            <p1 class="desc">اپ پروکالا اپی مشابه به تلگرام هست که با فریم ورک فلاتر نوشته شده که فقط به سرور متصل نیست</p1>
+            <br>
+            <button class="downloadBtn"><a href="assets/apk/app-release.apk" download="app-release.apk"><p>دانلود اپلکیشن</p>
+            </a></button>
+          </div>
+          <br>
+          <div id="samples">
+            <img src="assets/images/gamesellerimg.png" alt="gameshop" class="sampleImagesSize">
+            <br>
+              <p1> اپلیکیشن فروشگاهی گیم</p1>
+              <br>
+              <p1 class="desc">این برنامه یک برنامه فروشگاهی گیم هستش که انواع بازی هارو میشه در اون دید و امتیاز بندی کرد</p1>
+              <br>
+              <button class="downloadBtn"><a href="assets/gameshopapk/app-release.apk" download="app-release.apk"><p>دانلود اپلکیشن</p>
+              </a></button>
+            </div>
+            <br>
+            <div id="samples">
+              <img src="assets/images/igimgs.png" alt="gameshop" class="sampleImagesSize">
+              <br>
+                <p1> اپلیکیشن مشابه اینستاگرام </p1>
+                <br>
+                <p1 class="desc">اپی مشابه رابط کاربری اینستاگرام که فقط به سرور متصل نیست</p1>
+                <br>
+                <button class="downloadBtn"><a href="assets/igapk/app-release.apk" download="app-release.apk"><p>دانلود اپلکیشن</p>
+                </a></button>
+              </div>
       </main>
     </header>
     <script src="script.js"></script>
